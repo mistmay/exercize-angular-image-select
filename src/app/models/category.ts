@@ -1,0 +1,1 @@
+export type Category = 'cats' | 'birds' | 'shibes';

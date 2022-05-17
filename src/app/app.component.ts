@@ -2,9 +2,18 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+  <app-navbar></app-navbar>
+  <main class="bg-light py-5 px-2">
+    <router-outlet></router-outlet>
+  </main>
+  `,
+  styles: [`
+  main {
+    min-height: calc(100vh - 70px);
+  }
+  `]
 })
 export class AppComponent {
-  title = 'images-select';
+
 }
